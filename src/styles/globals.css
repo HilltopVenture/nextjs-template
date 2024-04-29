@@ -1,0 +1,81 @@
+@import url('./fonts.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+@layer utilities {
+
+  .gray-box {
+    @apply rounded-10 bg-gray-F7 py-7.5 px-6
+  }
+
+  .text-title {
+    @apply font-semibold text-35
+  }
+
+  .tw-base {
+    @apply font-sans font-normal text-dark
+  }
+
+  .tw-base a {
+    @apply no-underline text-dark underline-offset-4 decoration-2 decoration-dark
+  }
+
+  .tw-base a:hover {
+    @apply underline text-dark
+  }
+
+  @media screen and (max-width: 480px) {
+    .text-title {
+      @apply font-semibold text-25
+    }
+  }
+}
+
+.tiny-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.tiny-scrollbar::-webkit-scrollbar-track {
+  background-color: none;
+}
+
+.tiny-scrollbar::-webkit-scrollbar-thumb {
+  background: rgb(165, 165, 165, 0.5);
+  border-radius: 10px;
+}
+
+/* .home-banner-slider .slick-dots li {
+  width: 80px;
+  height: 10px;
+}
+
+.home-banner-slider .slick-dots li button {
+  width: 80px;
+  height: 10px;
+}
+
+.home-banner-slider .slick-dots li button:before {
+  width: 60px;
+  height: 4px;
+  background-color: #375BD2;
+  content: '';
+  border-radius: 10px;
+} */
+
+@media screen and (max-width: 1024px) {
+  .home-banner-slider .slick-dots {
+    bottom: 8px;
+  }
+}

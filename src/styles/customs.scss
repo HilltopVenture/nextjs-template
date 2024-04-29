@@ -1,0 +1,30 @@
+$theme-colors: (
+  "primary": #00a7e0,
+  "danger": #ff4136,
+);
+
+$white_color: #ffffff;
+$enable-important-utilities: false;
+
+@import "~bootstrap/scss/bootstrap";
+
+.nav-item {
+  .dropdown-menu {
+    background-color: #25435f;
+    color: $white_color;
+    :hover {
+      text-decoration: none;
+    }
+
+    .dropdown-item {
+      padding: 12px 16px;
+      color: $white_color;
+    }
+  }
+}
+
+.coins-dropdown {
+  .dropdown-menu {
+    padding: 0px;
+  }
+}
